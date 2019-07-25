@@ -2,15 +2,21 @@
 title: 'Hello world'
 author: 'JF'
 date: '13 July 2016'
-output:
-  html_document:
-    toc: true
-    toc_depth: 3
-    number_sections: yes
-    df_print: paged
-    toc_float: true
-    toc_collapsed: false
-    code_folding: "hide"
+output: #html_document:
+bibliography: "bibliographies.bib"
+link-citations: true
+  #pdf_document
+  #ioslides_presentation
+  # html_document:
+  #   toc: true
+  #   toc_depth: 3
+  #   number_sections: yes
+  #   df_print: paged
+  #   toc_float: true
+  #   toc_collapsed: false
+  #   code_folding: "hide"
+  #   theme: spacelab
+  #   highlight: espresso
 ---
 
 ```{r setup, include=FALSE}
@@ -52,6 +58,7 @@ Item of interest `r df[1,1]`
 
 ```
 -->
+@rmarkdown1
 
 ## VISUALS
 
@@ -69,3 +76,7 @@ df2 %>%
     geom_boxplot() +
     theme(axis.text.x=element_text(angle=45, hjust=1))
 ```
+
+citation("rmarkdown") %>% print(bibtex=T)
+
+
