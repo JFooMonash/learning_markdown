@@ -8,3 +8,8 @@ be sure to edit the script to change the following variables to your name and em
 
 - `user_name`
 - `user_email`
+
+## Learning git and github
+
+- [Learning Rmarkdown](test.html)
+- [Learning Rmarkdown presentation](test2.html)
